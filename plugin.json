@@ -1,0 +1,8 @@
+{
+  "name": "steam_sitelink",
+  "common_name": "Steam SiteLink",
+  "description": "Adds configurable search buttons for external game sites below the title on Steam game pages.",
+  "version": "1.0.0",
+  "author": "dane",
+  "useBackend": true
+}

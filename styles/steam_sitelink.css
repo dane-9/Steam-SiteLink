@@ -1,0 +1,253 @@
+/* Injected Buttons & Settings */
+
+#plugin-button-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 5px !important;
+}
+
+#plugin-search-buttons-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 !important;
+}
+
+/* Search Buttons */
+
+.btnv6_blue_hoverfade.btn_medium[id$="-injected-link"] {
+    margin: 0 5px 0 0 !important;
+    vertical-align: middle !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    color: #67c1f5 !important;
+    background: rgba(103, 193, 245, 0.2) !important;
+    border: none !important;
+    border-radius: 2px !important;
+    padding: 1px !important;
+    cursor: pointer;
+    white-space: nowrap;
+}
+#plugin-search-buttons-group > .btnv6_blue_hoverfade.btn_medium[id$="-injected-link"]:last-of-type {
+    margin-right: 0 !important;
+}
+
+.btnv6_blue_hoverfade.btn_medium[id$="-injected-link"] > span {
+    border-radius: 2px;
+    display: flex !important;
+    align-items: center !important;
+    padding: 5px 8px !important;
+    line-height: normal !important;
+    height: 100% !important;
+}
+.btnv6_blue_hoverfade.btn_medium[id$="-injected-link"]:hover {
+    text-decoration: none !important;
+    color: #fff !important;
+    background: -webkit-linear-gradient(150deg, #417a9b 5%, #67c1f5 95%) !important;
+    background: linear-gradient(-60deg, #417a9b 5%, #67c1f5 95%) !important;
+}
+.btnv6_blue_hoverfade.btn_medium[id$="-injected-link"]:hover > span {
+    background: transparent !important;
+}
+.btnv6_blue_hoverfade.btn_medium[id$="-injected-link"].btn_active,
+.btnv6_blue_hoverfade.btn_medium[id$="-injected-link"].active {
+    text-decoration: none !important;
+    color: #fff !important;
+    background: rgba(103, 193, 245, 0.6) !important;
+}
+.btnv6_blue_hoverfade.btn_medium[id$="-injected-link"].btn_active > span,
+.btnv6_blue_hoverfade.btn_medium[id$="-injected-link"].active > span {
+    background: transparent !important;
+}
+
+.plugin-search-button-icon {
+    width: 16px !important;
+    height: 16px !important;
+    vertical-align: middle !important;
+    flex-shrink: 0 !important;
+    object-fit: contain !important;
+}
+
+/* Settings Menu */
+
+#plugin-settings-wrapper {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-left: auto !important;
+    padding-left: 10px;
+}
+
+#plugin-settings-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: rgba(103, 193, 245, 0.2);
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+#plugin-settings-button:hover {
+    background: linear-gradient(-60deg, #417a9b 5%, #67c1f5 95%) !important;
+}
+#plugin-settings-button img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    filter: invert(85%) sepia(30%) saturate(600%) hue-rotate(175deg) brightness(1.1) contrast(0.85);
+    transition: filter 0.2s ease;
+}
+#plugin-settings-button:hover img {
+    filter: brightness(3);
+}
+
+/* Dropdown Style */
+
+#plugin-settings-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 5px;
+    background-color: #3d4450;
+    border: none;
+    border-radius: 0;
+	font-size: 13px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 0 0;
+    z-index: 1001;
+    min-width: 240px;
+    color: #dcdedf;
+}
+
+.plugin-settings-menu-item {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    white-space: nowrap;
+}
+.plugin-settings-menu-item:hover {
+    background-color: #dcdedf;
+    color: #515359;
+}
+
+.plugin-settings-alignment-item {
+    padding-left: 15px;
+    cursor: default;
+}
+.plugin-settings-alignment-item:hover {
+    background-color: transparent;
+    color: #dcdedf;
+}
+.plugin-settings-alignment-item input[type="radio"] {
+    margin-right: 3px;
+    cursor: pointer;
+}
+.plugin-settings-alignment-item label {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.plugin-settings-menu-item input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.plugin-settings-menu-item label {
+    vertical-align: middle;
+    cursor: pointer;
+    flex-grow: 1;
+    display: block;
+    width: 100%;
+}
+
+.plugin-settings-submenu-parent {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+.plugin-settings-submenu-parent::before {
+    content: '◄';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    color: #515359;
+}
+.plugin-settings-submenu-parent:hover::before {
+    color: #ffffff;
+}
+
+.plugin-settings-submenu {
+    display: none;
+    position: absolute;
+    top: -5px;
+    right: 100%;
+    margin-right: 1px;
+    background-color: #3d4450;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 5px 0;
+    z-index: 1002;
+    min-width: 150px;
+    color: #dcdedf;
+}
+
+.plugin-settings-separator {
+    height: 1px;
+    background-color: #67707b;
+    margin: 0 0;
+}
+
+/* Alignment Overrides */
+
+#plugin-button-container:not(.plugin-align-right) #plugin-search-buttons-group {
+    margin-left: 0 !important;
+}
+#plugin-button-container.plugin-align-right #plugin-search-buttons-group {
+    margin-left: auto !important;
+}
+
+#plugin-context-menu {
+    position: absolute;
+    z-index: 1010;
+    background-color: #3d4450;
+    min-width: 100px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+    padding: 3px 3px;
+    color: #dcdedf;
+    font-size: 12px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: row;
+	transform: translateX(-50%);
+}
+
+.plugin-context-menu-item {
+    padding: 4px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-grow: 1;
+    text-align: center;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.plugin-context-menu-item + .plugin-context-menu-item {
+    border-left: 1px solid #67707b;
+}
+
+.plugin-context-menu-item:hover {
+    background-color: #dcdedf;
+    color: #515359;
+}
